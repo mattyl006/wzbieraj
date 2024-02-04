@@ -1,46 +1,12 @@
 .hero-mobile {
-    margin: 80px 0 0 0;
-    background-color: var(--white-3);
-    width: 100%;
-    position: relative;
-
-    @media (min-width: 768px) {
-        display: none;
-    }
-}
-
-.hero__header-mobile {
-    font-size: 29px;
-    line-height: 29px;
-    color: var(--turquoise);
-    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
-    position: relative;
-    z-index: 2;
-    padding: 20px 28px 0;
-
-    @media (min-width: 720px) {
-        text-align: center;
-    }
-}
-
-.hero__deco-block-mobile {
-    height: calc(76px + 4vw);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    min-height: 100vh;
     background-color: var(--white-3);
-    z-index: 1;
-
-    @media (max-width: 356px) {
-        text-align: center;
-        height: 160px
-    }
-
-    @media (min-width: 714px) {
-        height: 80px
-    }
+    width: 100%;
+    position: relative;
 
     @media (min-width: 768px) {
         display: none;
@@ -48,32 +14,41 @@
 }
 
 .hero__container-mobile {
+    margin: 0 28px;
     width: 100%;
-    min-height: calc(100vh - 138px);
-    padding: 0 28px;
+    max-width: 520px;
+    height: 80vh;
+    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #2F4449;
 }
 
-.hero__dark-bag-half-mobile {
+.hero__header-mobile {
+    font-size: 29px;
+    line-height: 29px;
+    color: var(--white);
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    padding: 20px 28px 0;
+    text-align: center;
+
+    @media (min-width: 720px) {
+        text-align: center;
+    }
+}
+
+.hero__dark-half-mobile {
     width: 50%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 50%;
     background-color: var(--turquoise);
-}
-
-.hero__logo-container-mobile {
-    width: 100%;
-    max-width: 520px;
-    height: 457px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #2F4449;
 }
 
 .hero__logo-container-image-mobile {
@@ -87,6 +62,8 @@
 }
 
 .hero__logo-mobile {
+    width: 200px;
+    height: 200px;
     z-index: 2;
     @media (min-width: 768px) {
         display: none;

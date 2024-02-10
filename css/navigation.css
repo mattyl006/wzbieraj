@@ -40,19 +40,6 @@
     text-decoration: none;
 }
 
-.navbar__contact--mobile {
-    @media (min-width: 768px) {
-        display: none;
-    }
-}
-
-.navbar__contact--desktop {
-    display: none;
-    @media (min-width: 768px) {
-        display: block;
-    }
-}
-
 .navbar_container {
     display: none;
     @media (min-width: 768px) {

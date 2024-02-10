@@ -7,34 +7,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" type="text/css" href="index.css">
         <link rel="stylesheet" type="text/css" href="normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/navigation-mobile.css">
         <link rel="stylesheet" type="text/css" href="css/navigation.css">
         <link rel="stylesheet" type="text/css" href="css/hero.css">
         <link rel="stylesheet" type="text/css" href="css/hero-mobile.css">
     </head>
     <body>
+        <header class="navbar-mobile">
+            <button class="navbar__nav-button-mobile">
+                <img class="navbar__hamburger-mobile show" src="assets/icons/hamburger.svg" alt="navigation button" />
+                <img class="navbar__hamburger-active-mobile" src="assets/icons/hamburger-cross.svg" alt="navigation button active" />
+            </button>
+        </header>
         <header class="navbar">
-            <div class="navbar_desktop-container">
+            <div class="navbar_container">
                 <img class="navbar__logo" alt="logo" src="assets/icons/logo.svg"/>
                 <span class="navbar__title">
                     Wojciech Zbierajewski
                 </span>
             </div>
-            <button class="navbar__mobile-nav-button">
-                <img src="assets/icons/nav-button.svg" alt="navigation button" />
-            </button>
             <a class="navbar__contact navbar__contact--desktop" href="tel:+48785161280">
                 Tel: 785161280
             </a>
         </header>
         <section class="hero-mobile">
-
             <div class="hero__dark-half-mobile"></div>
             <div class="hero__container-mobile">
                 <img class="hero__logo-mobile" alt="logo" src="assets/icons/logo.svg" />
                 <h1 class="hero__header-mobile">
                     Wojciech Zbierajewski Fizjoterapeuta i Osteopata
                 </h1>
-                <img class="hero__logo-container-image-mobile" alt="logo" src="assets/images/studio.png" />
+                <img class="hero__logo-image-mobile" alt="logo" src="assets/images/studio.png" />
             </div>
         </section>
         <section class="hero">
@@ -67,5 +70,6 @@
                 adres: Wojska Polskiego 49b, p. 126 64-920 Piła
             </p>
         </footer>
+        <script src="index.js"></script> 
     </body>
 </html>

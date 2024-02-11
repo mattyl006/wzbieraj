@@ -5,59 +5,96 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 80px;
     background-color: var(--white);
     width: 100%;
     z-index: 3;
+    height: 100px;
+    padding: 0 20px;
 
     @media (min-width: 768px) {
         display: flex;
-        height: 100px;
+    }
+
+    @media (min-width: 1124px) {
         padding: 0 60px
     }
 }
 
-.navbar__mobile-nav-button {
-    border: none;
-    padding: 0;
-    margin: 0;
-    background: none;
-    cursor: pointer;
-    margin: 0 30px 0 0;
-
-    @media (min-width: 768px) {
-        display: none;
-    }
-}
-
 .navbar__contact {
-    margin: 0 0 0 16px;
-    padding: 16px 33px;
+    margin: 0 0 0 8px;
+    padding: 10px 16px;
     background-color: var(--green);
     font-weight: 700;
-    font-size: 14px;
+    font-size: 12px;
     color: var(--white);
     text-decoration: none;
+
+    @media (min-width: 1124px) {
+        margin: 0 0 0 16px;
+        padding: 16px 32px;
+        font-size: 14px;
+    }
 }
 
-.navbar_container {
-    display: none;
-    @media (min-width: 768px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
+.navbar__container-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .navbar__title {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 18px;
     color: var(--black);
+    width: 108px;
+
+    @media (min-width: 1124px) {
+        font-size: 24px;
+        width: auto;
+    }
 }
 
 .navbar__logo {
     width: 67px;
     height: 67px;
+}
+
+.navbar__container-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    @media (min-width: 1124px) {
+        gap: 40px;
+    }
+}
+
+.navbar__nav {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar__ul {
+    display: flex;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+
+    @media (min-width: 1124px) {
+        gap: 20px;
+    }
+}
+
+.navbar__link {
+    color: rgba(85, 85, 85, 1);
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+
+    @media (min-width: 1124px) {
+        font-size: 18px;
+    }
 }

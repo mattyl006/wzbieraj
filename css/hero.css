@@ -64,25 +64,21 @@
 }
 
 .hero__fog-border {
-    width: 310px;
-    height: 380px;
     border-bottom: solid #F8F4EE 10px;
     border-right: solid #F8F4EE 10px;
     border-top: solid #F8F4EE 10px;
 
+    width: 404px;
+    height: 448px;
+
     @media (min-width: 1024px) {
-        width: 370px;
-        height: 440px;
+        width: 464px;
+        height: 508px;
     }
 
     @media (min-width: 1300px) {
-        width: 430px;
-        height: 500px;
-    }
-
-    @media (min-width: 1440px) {
-        width: 530px;
-        height: 600px;
+        width: 544px;
+        height: 588px;
     }
 }
 
@@ -92,6 +88,22 @@
     border: 10px #1E2C30 solid;
     margin-left: -38px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 400px;
+    height: 400px;
+
+    @media (min-width: 1024px) {
+        width: 460px;
+        height: 460px;
+    }
+
+    @media (min-width: 1300px) {
+        width: 540px;
+        height: 540px;
+    }
 }
 
 .hero__logo-image {
@@ -120,6 +132,11 @@
 }
 
 .hero__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 4px 2px rgba(0, 0, 0, 0.25);
+    width: 220px;
     padding: 8px 16px;
     background-color: var(--green);
     font-weight: 700;

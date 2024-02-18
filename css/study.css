@@ -1,0 +1,129 @@
+.study {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 44px 16px;
+  background-color: rgba(248, 244, 238, 1);
+
+  @media (min-width: 768px) {
+    padding: 96px 60px;
+  }
+
+  /* @media (min-width: 1024px) {
+    } */
+}
+
+.study__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  margin: 0 0 28px 0;
+
+  width: 100%;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: 56px;
+    line-height: 56px;
+    margin: 0 0 40px 0;
+  }
+}
+
+.higher-education {
+  width: 100%;
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 24px;
+  }
+}
+
+.higher-education__header {
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  color: rgba(30, 44, 48, 1);
+  font-family: "Playfair Display", serif;
+
+  @media (min-width: 768px) {
+    margin: 0 0 8px 0;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 14px 0;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 45px;
+    margin: 0 0 28px 0;
+    line-height: 45px;
+  }
+}
+
+.higher-education__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    max-width: 740px;
+    height: 478px;
+
+    padding: 26px 0 68px 0;
+    border-top: solid 4px rgba(30, 44, 48, 1);
+    border-bottom: solid 4px rgba(30, 44, 48, 1);
+  }
+}
+
+.higher-education__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 18px 0 0 0;
+  padding: 0 24px;
+
+  @media (min-width: 768px) {
+    gap: 20px;
+  }
+}
+
+.higher-education__item {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+
+  @media (min-width: 768px) {
+    line-height: 22px;
+    line-height: 26px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+
+.higher-education__image {
+  object-fit: cover;
+  width: 328px;
+  height: 328px;
+  box-shadow: 0px 20px 60px 0px rgba(47, 68, 73, 0.46);
+  border: 3px solid rgba(30, 44, 48, 1);
+
+  @media (min-width: 768px) {
+    width: auto;
+    height: 470px;
+  }
+}
